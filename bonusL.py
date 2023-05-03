@@ -1,11 +1,17 @@
 Username = input("Hello please enter you name: ")
-emailN = input("Enter your email please :) ")
 
-if len(Username) < 2:
-    if emailN.find('@gmail.com') > -1:
-        print(f'Welcome {Username}, you registered with the email {emailN}!')
-        if emailN.find('@gmail.com') <= -1:
-         print('the email is not valid , please provide a valid email!')
+
+if len(Username) > 2:
+    
+    emailN = input("Enter your email please :) ")
+
+    if emailN.find("@Gmail.com") != -1:
+        print(f"welcome {Username} , you registerred with the email {emailN} !")
+    else:
+        print("worng email, pleae provide valid email")
+
 else:
-    print('length of the name must be more than 2 char, please provide a name')
+    print("provide a name with a length of more than two characters")
+        
+
         
