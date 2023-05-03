@@ -16,11 +16,12 @@ username = input("Please inter your name: ")
 email = input("Please inter your email: ")
 
 if username.__len__() > 2:
-  #  if "@gmail.com"in email and email.isspace():
-    if email.endswith("@gmail.com"):
+ 
+    if email.endswith("@gmail.com") and not " " in email :
         print(f"welcome {username}, you registered with the email {email} !")
     else:
         print("the email is not valid , please provide a valid email.")
+
 else:
     print("the name length must be more than 2 characters, please provide a valid name")
 
