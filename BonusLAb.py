@@ -19,7 +19,7 @@ email = input('Please enter your email: ')
 
 if len(name) > 2:
 
-    if email.find('@gmail.com') == True:
+    if email.find('@gmail.com') > -1:
         print(f'Welcome {name}, ou registered with the email {email}!')
 
     else:
